@@ -134,13 +134,13 @@ console.log(onlyletters('i have 4 dogs'))
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
  const isThisAnEmail = function(str){
- const email = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
- // costruisco questa costante per racchiudere i caratteri di solito presenti nelle email per poi escluderli
-   if ( email.test(str)){
+ 
+   if ( str.includes('@')){
      return true
-   }
- else{ return false}
+    }
+    else{ return false}
   }
+  // costruisco questa costante per racchiudere i caratteri di solito presenti nelle email per poi escluderli
 console.log(isThisAnEmail('giulio.fardella@outlook.it'))
 
 /* ESERCIZIO 7
